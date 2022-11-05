@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assets/images/login/login.svg';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import SocialLogin from '../Shared/social-login/SocialLogin';
 
 const Login = () => {
 	const { user, login, setLoading } = useContext(AuthContext);
@@ -99,6 +100,7 @@ const Login = () => {
 							Sign Up
 						</Link>{' '}
 					</p>
+					<SocialLogin />
 				</div>
 			</div>
 		</div>
